@@ -5,10 +5,9 @@ public class GUI {
     private static final int WIDTH = 400;
     private static final int HEIGHT = 300;
 
-    private Parking parking;
+    private final Parking parking;
     private JFrame frame;
     private JTextArea textArea;
-    private JPanel panel;
     private JButton btnIntroducir;
     private JButton btnSacar;
     private JButton btnComprobar;
@@ -27,7 +26,7 @@ public class GUI {
         textArea = new JTextArea();
         frame.add(new JScrollPane(textArea), "Center");
 
-        panel = new JPanel();
+        JPanel panel = new JPanel();
         btnIntroducir = new JButton("Introducir Vehículo");
         btnSacar = new JButton("Sacar Vehículo");
         btnComprobar = new JButton("Comprobar Estado");
